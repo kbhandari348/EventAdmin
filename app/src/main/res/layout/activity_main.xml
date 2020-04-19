@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="8dp"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/app_name"
+        app:titleTextColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/reactangle"
+                android:hint="Event Name"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eventOrganiser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:background="@drawable/reactangle"
+                android:hint="Event Organised By"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eventDateFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/reactangle"
+                android:focusable="false"
+                android:ems="10"
+                android:hint="Event Starting Date"
+                android:inputType="date"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eventDateTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/reactangle"
+                android:focusable="false"
+                android:ems="10"
+                android:hint="Event Completion Date"
+                android:inputType="date"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eventStartingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/reactangle"
+                android:focusable="false"
+                android:ems="10"
+                android:hint="Event Starting Time"
+                android:inputType="time"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eventVenue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/reactangle"
+                android:ems="10"
+                android:hint="Event Venue"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eventPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/reactangle"
+                android:ems="10"
+                android:hint="Ticket Price"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/eventContactInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/reactangle"
+                android:hint="Contact Number"
+                android:inputType="phone"
+                android:ems="10"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/createEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:ems="10"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_rectangle"
+                android:text="Send Request"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/viewEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentBottom="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:background="@drawable/button_rectangle"
+                android:onClick="btnDisplay"
+                android:text="View Status"
+                android:textColor="#FFFFFF" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:background="@drawable/button_rectangle"
+                android:text="Logout"
+                android:textColor="#FFFFFF" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
